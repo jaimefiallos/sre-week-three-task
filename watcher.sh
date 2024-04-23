@@ -13,6 +13,13 @@ while true; do
   # Get the number of restarts of the pod
   RESTARTS=$(kubectl get pods -n ${NAMESPACE} -l app=${DEPLOYMENT} -o jsonpath="{.items[0].status.containerStatuses[0].restartCount}")
 
+  # Check if RESTARTS is null or empty
+  if [ -z "$RESTARTS" ]; then
+    echo "Failed to fetch restarts or no pods found. Checking again..."
+    sleep 60
+    continue
+  fi
+
   echo "Current number of restarts: ${RESTARTS}"
 
   # If the number of restarts is greater than the maximum allowed, scale down the deployment
