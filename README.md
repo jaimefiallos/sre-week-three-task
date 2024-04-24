@@ -12,6 +12,7 @@ The focus is on addressing issues such as recurring obsolete alerts and ineffect
 
 ### 2. **Improved Alert Filtering**
 - **Description**: Enhance alert filtering capabilities to screen out noise and obsolete alerts before they reach the ticketing system.
+- **Potential Products**:
   - **SolarWinds**: Offers advanced alert filtering options that can be tailored based on the severity and frequency of alerts.
 
 ## Solutions for Lack of Prioritization
