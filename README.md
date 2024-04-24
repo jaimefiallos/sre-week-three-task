@@ -1,5 +1,4 @@
 ## Task 2:
-The focus is on addressing issues such as recurring obsolete alerts and ineffective prioritization, which have been identified as major sources of toil in the ticketing system.
 
 ## Solutions for Recurring Obsolete Alerts
 
